@@ -1,0 +1,22 @@
+Copyright (c) 2015, endjin limited, all rights reserved.
+
+Redistribution and use in binary forms, with or without modification, are permitted provided that the following conditions are met:
+The Licensee shall not decompile, modify, copy, duplicate, reproduce, license or sublicense the Software, or transfer or convey the Software or any right in the Software to anyone else without the prior written consent of endjin limited
+The Licensee shall be entitled to use this in a Combined Work providing the terms of this license agreement are not otherwise in breach.
+Neither this Agreement nor any interest in this Agreement may be assigned by Licensee without the prior express written approval of Endjin.
+The name of endjin limited may not be used to endorse or promote products derived from this software without specific prior written permission.
+
+Severability
+If any term of this license agreement is held by a court of competent jurisdiction to be invalid or unenforceable, then this license agreement, including all of the remaining terms, will remain in full force and effect as if such invalid or unenforceable term had never been included.
+
+Governing Law
+This Agreement shall be construed and enforced in accordance with the laws of England and Wales.
+
+Definitions
+‘The Software’ is the source code, binaries documentation and other materials supplied along with this license agreement.
+A “Combined Work” is a work produced by combining or linking an application or other code with the Software. The particular version of the Software with which the Combined Work was made is also called the “Combined Version”.
+Disclaimer
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+Licensing Contact
+
+All licensing enquiries should be directed in the first instance to licensing@endjin.com

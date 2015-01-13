@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <Import Project="CopyArtefacts.targets" />
+  <Import Project="CleanSolutions.targets" />
+  <Import Project="CompileSolutions.targets" />
+
+  <PropertyGroup>
+    <CompileDependsOn>
+      CleanSolutions;
+      CompileSolutions;
+      CopyArtefacts;
+    </CompileDependsOn>
+  </PropertyGroup>
+  
+  <Target Name="Compile"
+          DependsOnTargets="$(CompileDependsOn)" />
+  
+</Project>
