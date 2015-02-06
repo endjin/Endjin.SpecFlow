@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Endjin.SpecFlow", "Endjin.SpecFlow\Endjin.SpecFlow.csproj", "{FCB5FFDD-E2F6-428E-970A-814B920B7E62}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Endjin.SpecFlow.Owin.Hosting", "Endjin.SpecFlow.Owin.Hosting\Endjin.SpecFlow.Owin.Hosting.csproj", "{FD163562-FD42-44BA-8264-03D27E574D62}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{FCB5FFDD-E2F6-428E-970A-814B920B7E62}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FCB5FFDD-E2F6-428E-970A-814B920B7E62}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FCB5FFDD-E2F6-428E-970A-814B920B7E62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD163562-FD42-44BA-8264-03D27E574D62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD163562-FD42-44BA-8264-03D27E574D62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD163562-FD42-44BA-8264-03D27E574D62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD163562-FD42-44BA-8264-03D27E574D62}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

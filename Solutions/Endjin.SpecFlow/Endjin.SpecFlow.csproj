@@ -57,8 +57,7 @@
   <ItemGroup>
     <Compile Include="Extensions\PathExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Hooks\SetupHooks.cs" />
-    <Compile Include="Hooks\TeardownHooks.cs" />
+    <Compile Include="Hooks\ContainerHooks.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
