@@ -15,3 +15,12 @@ Add:
 ```
 
 to the ``<specFlow>`` section in your app.config.
+
+To use Endjin.SpecFlow.Owin.Hosting, two app settings keys are required, to set the relative file path for locally stored static file and the host URL they will be served from inside the specification:
+
+```
+<appSettings>
+  <add key="Endjin.SpecFlow.Owin.Hosting.Url" value="http://localhost:12345" />
+  <add key="Endjin.SpecFlow.Owin.Hosting.StaticFilePath" value="/Data" />
+</appSettings>
+```
