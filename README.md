@@ -7,9 +7,11 @@ Currently a manual step is required to load the assemblied in your SpecFlow proj
 
 Add:
 
+```
 <stepAssemblies>
   <stepAssembly assembly="Endjin.SpecFlow" />
   <stepAssembly assembly="Endjin.SpecFlow.Owin.Hosting" />
 </stepAssemblies>
+```
 
 to the <specFlow> section in your app.config.
