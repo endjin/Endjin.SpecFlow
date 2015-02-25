@@ -14,4 +14,4 @@ Add:
 </stepAssemblies>
 ```
 
-to the <specFlow> section in your app.config.
+to the ``<specFlow>`` section in your app.config.
