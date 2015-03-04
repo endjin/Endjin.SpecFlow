@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FCB5FFDD-E2F6-428E-970A-814B920B7E62}</ProjectGuid>
+    <ProjectGuid>{5DEAC6E3-2962-4284-B010-BF4B0C706DE9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Endjin.SpecFlow</RootNamespace>
-    <AssemblyName>Endjin.SpecFlow</AssemblyName>
+    <RootNamespace>Endjin.SpecFlow.Composition</RootNamespace>
+    <AssemblyName>Endjin.SpecFlow.Composition</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -29,28 +29,29 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup>
-    <SignAssembly>true</SignAssembly>
-    <AssemblyOriginatorKeyFile>..\..\Artefacts\endjin-public.snk</AssemblyOriginatorKeyFile>
-  </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Should">
-      <HintPath>..\..\Packages\Should.1.1.20\lib\Should.dll</HintPath>
+    <Reference Include="EndjinCoreComposition">
+      <HintPath>..\..\Packages\Endjin.Core.Composition.2.2.0.34\lib\Net45\EndjinCoreComposition.dll</HintPath>
+    </Reference>
+    <Reference Include="EndjinCoreCompositionNet45">
+      <HintPath>..\..\Packages\Endjin.Core.Composition.2.2.0.34\lib\Net45\EndjinCoreCompositionNet45.dll</HintPath>
+    </Reference>
+    <Reference Include="EndjinCoreContainer">
+      <HintPath>..\..\Packages\Endjin.Core.Composition.2.2.0.34\lib\Net45\EndjinCoreContainer.dll</HintPath>
+    </Reference>
+    <Reference Include="EndjinCoreContainerNet45">
+      <HintPath>..\..\Packages\Endjin.Core.Composition.2.2.0.34\lib\Net45\EndjinCoreContainerNet45.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
     <Reference Include="TechTalk.SpecFlow">
       <HintPath>..\..\Packages\SpecFlow.1.9.0\lib\net35\TechTalk.SpecFlow.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Extensions\PathExtensions.cs" />
-    <Compile Include="Extensions\ScenarioContextExtensions.cs" />
+    <Compile Include="Hooks\ContainerHooks.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SharedSteps\ResultSteps.cs" />
-    <Compile Include="SharedSteps\ExceptionSteps.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

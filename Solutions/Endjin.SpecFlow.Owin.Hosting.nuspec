@@ -18,7 +18,8 @@
   <files>
     <file src="License.txt" target="License.txt" />
     <file src="Endjin.SpecFlow.Owin.Hosting.dll" target="lib\net45\" />
-    <file src="Endjin.SpecFlow.Owin.Hosting.pdb" target="lib\net45\" />
     <file src="Install.ps1" target="tools" />
+    <file src="..\Artefacts\NuGet\Endjin.SpecFlow.Owin.Hosting\app.config.install.xdt" target="content" />
+    <file src="..\Artefacts\NuGet\Endjin.SpecFlow.Owin.Hosting\app.config.uninstall.xdt" target="content" />
   </files>
 </package>

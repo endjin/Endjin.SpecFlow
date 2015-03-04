@@ -1,4 +1,4 @@
-﻿namespace Endjin.SpecFlow.Hooks
+﻿namespace Endjin.SpecFlow.Composition.Hooks
 {
     #region Using Directives
 
@@ -12,28 +12,28 @@
     [Binding]
     public class ContainerHooks
     {
-        [BeforeFeature("container_feature_setup")]
+        [BeforeFeature("container_feature")]
         public static void ContainerFeatureSetup()
         {
             InitializeContainer();
         }
 
-        [BeforeScenario("container_scenario_setup")]
-        public static void ContainerScenarioSetup()
-        {
-            InitializeContainer();
-        }
-
-        [AfterFeature("container_feature_teardown")]
+        [AfterFeature("container_feature")]
         public static void ContainerFeatureTeardown()
         {
             ShutdownContainer();
         }
 
-        [AfterScenario("container_scenario_teardown")]
+        [AfterScenario("container_scenario")]
         public static void ContainerScenarioTeardown()
         {
             ShutdownContainer();
+        }
+
+        [BeforeScenario("container_scenario")]
+        public static void ContainerScenarioSetup()
+        {
+            InitializeContainer();
         }
 
         private static void InitializeContainer()

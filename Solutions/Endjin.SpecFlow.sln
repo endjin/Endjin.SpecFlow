@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Endjin.SpecFlow", "Endjin.S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Endjin.SpecFlow.Owin.Hosting", "Endjin.SpecFlow.Owin.Hosting\Endjin.SpecFlow.Owin.Hosting.csproj", "{FD163562-FD42-44BA-8264-03D27E574D62}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Endjin.SpecFlow.Composition", "Endjin.SpecFlow.Composition\Endjin.SpecFlow.Composition.csproj", "{5DEAC6E3-2962-4284-B010-BF4B0C706DE9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{FD163562-FD42-44BA-8264-03D27E574D62}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FD163562-FD42-44BA-8264-03D27E574D62}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FD163562-FD42-44BA-8264-03D27E574D62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DEAC6E3-2962-4284-B010-BF4B0C706DE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DEAC6E3-2962-4284-B010-BF4B0C706DE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DEAC6E3-2962-4284-B010-BF4B0C706DE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DEAC6E3-2962-4284-B010-BF4B0C706DE9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
-    <id>Endjin.SpecFlow</id>
+    <id>Endjin.SpecFlow.Composition</id>
     <version>1.0.0.0</version>
     <title>Endjin's SpecFlow Extensions</title>
     <authors>Endjin</authors>
     <owners>Endjin</owners>
     <licenseUrl>https://dl.dropboxusercontent.com/u/5892928/Endjin/Software-License/Software-License.txt</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <description>Useful extensions for SpecFlow.</description>
+    <description>Useful extensions for SpecFlow. Integration with Endjin.Composition Framework</description>
     <dependencies>
       <dependency id="Endjin.Core.Composition" version="2.2.0.0" />
       <dependency id="Should" version="1.1.0" />
@@ -16,10 +16,10 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="License.txt" target="License.txt" />
+    <file src="License.txt" />
     <file src="Endjin.SpecFlow.dll" target="lib\net45\" />
     <file src="Install.ps1" target="tools" />
-    <file src="..\Artefacts\NuGet\Endjin.SpecFlow\app.config.install.xdt" target="content" />
-    <file src="..\Artefacts\NuGet\Endjin.SpecFlow\app.config.uninstall.xdt" target="content" />
+    <file src="..\Artefacts\NuGet\Endjin.SpecFlow.Composition\app.config.install.xdt" target="content" />
+    <file src="..\Artefacts\NuGet\Endjin.SpecFlow.Composition\app.config.uninstall.xdt" target="content" />
   </files>
 </package>
