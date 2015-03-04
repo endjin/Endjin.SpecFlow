@@ -29,6 +29,10 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\..\Artefacts\endjin-public.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="EndjinCoreComposition">
       <HintPath>..\..\Packages\Endjin.Core.Composition.2.2.0.34\lib\Net45\EndjinCoreComposition.dll</HintPath>
