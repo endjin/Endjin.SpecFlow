@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+  <configSections xdt:Transform="InsertIfMissing" />
   <configSections>
     <section name="specFlow" type="TechTalk.SpecFlow.Configuration.ConfigurationSectionHandler, TechTalk.SpecFlow" xdt:Locator="Match(name)" xdt:Transform="InsertIfMissing" />
   </configSections>
+  <specFlow xdt:Transform="InsertIfMissing" />
   <specFlow>
+  	<stepAssemblies xdt:Transform="InsertIfMissing" />
     <stepAssemblies>
       <stepAssembly assembly="Endjin.SpecFlow.Composition" xdt:Locator="Match(assembly)" xdt:Transform="InsertIfMissing" />
     </stepAssemblies>
