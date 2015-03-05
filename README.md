@@ -1,20 +1,25 @@
-# Endjin.SpecFlow
-Library to help write SpecFlow specification.
-Contains Hooks for setting up and tearing down the Endjin.Composition Framework & various useful extension methods.
-Also contains Hooks for hosting static web files (and Web Api Controllers) for testing
+# Endjin's SpecFlow extensions
 
-Currently a manual step is required to load the assemblied in your SpecFlow project.
+##Endjin.SpecFlow
+Library that contains:
+- Path & ScenarioContext extensions
+- Shared Steps for dealing with Exceptions & Results
 
-Add:
-
+To install via NuGet, use:
 ```
-<stepAssemblies>
-  <stepAssembly assembly="Endjin.SpecFlow" />
-  <stepAssembly assembly="Endjin.SpecFlow.Owin.Hosting" />
-</stepAssemblies>
+Install-Package Endjin.SpecFlow
 ```
+##Endjin.SpecFlow.Composition
+Library that contains:
+- Feature & Scenario Hooks for setting up and tearing down instances of the [Endjin Composition Framework](https://github.com/endjin/Endjin.Composition)
 
-to the ``<specFlow>`` section in your app.config.
+To install via NuGet, use:
+```
+Install-Package Endjin.SpecFlow.Composition
+```
+##Endjin.SpecFlow.Owin.Hosting
+Library that contains:
+- Feature & Scenario Hooks for setting up and tearing down an in-memory Owin based Web App, so that you can run integration tests against static files and WebApi Controllers
 
 To use Endjin.SpecFlow.Owin.Hosting, two app settings keys are required, to set the relative file path for locally stored static file and the host URL they will be served from inside the specification:
 
@@ -24,3 +29,20 @@ To use Endjin.SpecFlow.Owin.Hosting, two app settings keys are required, to set 
   <add key="Endjin.SpecFlow.Owin.Hosting.StaticFilePath" value="/Data" />
 </appSettings>
 ```
+
+To install via NuGet, use:
+```
+Install-Package Endjin.SpecFlow.Owin.Hosting
+```
+##Notes about installation
+Specflow requires all extensions to be listed in the app.config file of the SpecFlow project.
+
+These entries should be added automatically by the nuget packages:
+```
+<stepAssemblies>
+  <stepAssembly assembly="Endjin.SpecFlow" />
+  <stepAssembly assembly="Endjin.SpecFlow.Composition" />
+  <stepAssembly assembly="Endjin.SpecFlow.Owin.Hosting" />
+</stepAssemblies>
+```
+to the ``<specFlow>`` section in your app.config.
