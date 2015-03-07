@@ -7,6 +7,7 @@
     <authors>Endjin</authors>
     <owners>Endjin</owners>
     <licenseUrl>https://dl.dropboxusercontent.com/u/5892928/Endjin/Software-License/Software-License.txt</licenseUrl>
+    <iconUrl>https://raw.githubusercontent.com/endjin/Endjin.SpecFlow/master/Artefacts/endjin.specflow-icon-48px.png</iconUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <description>Useful general purpose extensions for SpecFlow</description>
     <dependencies>
