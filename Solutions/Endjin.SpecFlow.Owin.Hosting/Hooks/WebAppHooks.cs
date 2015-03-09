@@ -17,7 +17,7 @@
     {
         static IDisposable webApp;
 
-        [BeforeFeature("web_app_feature_setup")]
+        [BeforeFeature("web_app_feature")]
         public static void FeatureSetup()
         {
             if (webApp == null)
@@ -26,7 +26,7 @@
             }
         }
 
-        [BeforeScenario("web_app_scenario_setup")]
+        [BeforeScenario("web_app_scenario")]
         public static void ScenarioSetup()
         {
             if (webApp == null)
@@ -35,7 +35,7 @@
             }
         }
 
-        [AfterFeature("web_app_feature_teardown")]
+        [AfterFeature("web_app_feature")]
         public static void FeatureTeardown()
         {
             if (webApp != null)
@@ -44,7 +44,7 @@
             }
         }
 
-        [AfterScenario("web_app_scenario_teardown")]
+        [AfterScenario("web_app_scenario")]
         public static void ScenarioTeardown()
         {
             if (webApp != null)
