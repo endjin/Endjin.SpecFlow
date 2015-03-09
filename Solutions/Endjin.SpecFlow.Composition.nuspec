@@ -18,7 +18,7 @@
   </metadata>
   <files>
     <file src="License.txt" />
-    <file src="Endjin.SpecFlow.dll" target="lib\net45\" />
+    <file src="Endjin.SpecFlow.Composition.dll" target="lib\net45\" />
     <file src="Install.ps1" target="tools" />
     <file src="..\Artefacts\NuGet\Endjin.SpecFlow.Composition\app.config.install.xdt" target="content" />
     <file src="..\Artefacts\NuGet\Endjin.SpecFlow.Composition\app.config.uninstall.xdt" target="content" />
