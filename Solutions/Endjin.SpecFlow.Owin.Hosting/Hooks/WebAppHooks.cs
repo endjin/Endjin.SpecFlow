@@ -26,6 +26,16 @@
             }
         }
 
+        [AfterFeature("web_app_feature")]
+        public static void FeatureTeardown()
+        {
+            if (webApp != null)
+            {
+                webApp.Dispose();
+                webApp = null;
+            }
+        }
+
         [BeforeScenario("web_app_scenario")]
         public static void ScenarioSetup()
         {
@@ -35,21 +45,13 @@
             }
         }
 
-        [AfterFeature("web_app_feature")]
-        public static void FeatureTeardown()
-        {
-            if (webApp != null)
-            {
-                webApp.Dispose();
-            }
-        }
-
         [AfterScenario("web_app_scenario")]
         public static void ScenarioTeardown()
         {
             if (webApp != null)
             {
                 webApp.Dispose();
+                webApp = null;
             }
         }
 
