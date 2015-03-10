@@ -13,7 +13,7 @@
   </specFlow>
   <appSettings xdt:Transform="InsertIfMissing" />
   <appSettings>
-    <add key="Endjin.SpecFlow.Owin.Hosting.Url" value="http://localhost:12345" xdt:Transform="InsertIfMissing" />
-    <add key="Endjin.SpecFlow.Owin.Hosting.StaticFilePath" value="/Data" xdt:Transform="InsertIfMissing" />
+    <add key="Endjin.SpecFlow.Owin.Hosting.Url" value="http://localhost:12345" xdt:Locator="Match(key)" xdt:Transform="InsertIfMissing" />
+    <add key="Endjin.SpecFlow.Owin.Hosting.StaticFilePath" value="/Data" xdt:Locator="Match(key)" xdt:Transform="InsertIfMissing" />
   </appSettings>
 </configuration>

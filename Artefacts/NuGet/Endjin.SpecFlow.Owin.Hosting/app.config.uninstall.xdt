@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+<!--<configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
   <specFlow>
     <stepAssemblies>
       <stepAssembly assembly="Endjin.SpecFlow.Owin.Hosting" xdt:Locator="Match(assembly)" xdt:Transform="Remove" />
@@ -9,4 +9,4 @@
     <add key="Endjin.SpecFlow.Owin.Hosting.Url" value="http://localhost:12345" xdt:Transform="Remove" />
     <add key="Endjin.SpecFlow.Owin.Hosting.StaticFilePath" value="/Data" xdt:Transform="Remove" />
   </appSettings>
-</configuration>
+</configuration>-->

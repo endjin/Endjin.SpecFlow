@@ -12,25 +12,25 @@
     [Binding]
     public class ContainerHooks
     {
-        [BeforeFeature("container_feature")]
+        [BeforeFeature("container")]
         public static void ContainerFeatureSetup()
         {
             InitializeContainer();
         }
 
-        [AfterFeature("container_feature")]
+        [AfterFeature("container")]
         public static void ContainerFeatureTeardown()
         {
             ShutdownContainer();
         }
 
-        [AfterScenario("container_scenario")]
+        [AfterScenario("container")]
         public static void ContainerScenarioTeardown()
         {
             ShutdownContainer();
         }
 
-        [BeforeScenario("container_scenario")]
+        [BeforeScenario("container")]
         public static void ContainerScenarioSetup()
         {
             InitializeContainer();
