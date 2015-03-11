@@ -66,15 +66,13 @@ To use Endjin.SpecFlow.Owin.Hosting, two app settings keys are required, to set 
   <add key="Endjin.SpecFlow.Owin.Hosting.StaticFilePath" value="/Data" />
 </appSettings>
 ```
-
-To install via NuGet, use:
-```
-Install-Package Endjin.SpecFlow.Owin.Hosting
-```
-
 To use the tags:
 ```
 @web_app
+```
+To install via NuGet, use:
+```
+Install-Package Endjin.SpecFlow.Owin.Hosting
 ```
 
 ##Notes about installation
