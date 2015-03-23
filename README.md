@@ -4,38 +4,62 @@
 Library that contains:
 - Path & ScenarioContext extensions
 - Shared Steps for dealing with Exceptions:
-```
-[Then(@"an ""(.*)"" should be thrown")]
-[Then(@"a ""(.*)"" should be thrown")]
-```
-And Results:
-```
-[Then(@"the result count should be (.*)")]
-[Then(@"the result should equal the datetime (.*)")]
-[Then(@"the result should equal the datetimeoffset (.*)")]
-[Then(@"the result should equal the integer (.*)")]
-[Then(@"the result should equal the string ""(.*)""")]
-[Then(@"the result should be false")]
-[Then(@"the result should be greater than the datetime (.*)")]
-[Then(@"the result should be greater than the datetimeoffset (.*)")]
-[Then(@"the result should be greater than the integer (.*)")]
-[Then(@"the result should be greater than or equal to the datetime (.*)")]
-[Then(@"the result should be greater than or equal to the datetimeoffset (.*)")]
-[Then(@"the result should be greater than or equal to the integer (.*)")]
-[Then(@"the result should be less than the datetime (.*)")]
-[Then(@"the result should be less than the datetimeoffset (.*)")]
-[Then(@"the result should be less than the integer (.*)")]
-[Then(@"the result should be less than or equal to the datetime (.*)")]
-[Then(@"the result should be less than or equal to the datetimeoffset (.*)")]
-[Then(@"the result should be less than or equal to the integer (.*)")]
-[Then(@"the result should be null")]
-[Then(@"the result should be of type (.*)")]
-[Then(@"the result should be true")]
-[Then(@"the result should contain")]
-[Then(@"the result should equal the context value (.*)")]
-[Then(@"the result should not be null")]
-[Then(@"the result should not equal the string ""(.*)""")]
-```
+
+    ```
+  [Then(@"an ""(.*)"" should be thrown")]
+  [Then(@"a ""(.*)"" should be thrown")]
+  ```
+  And Results:
+  
+    ```
+    [Then(@"the result count should be (.*)")]
+    [Then(@"the result should equal the datetime (.*)")]
+    [Then(@"the result should equal the datetimeoffset (.*)")]
+    [Then(@"the result should equal the integer (.*)")]
+    [Then(@"the result should equal the string ""(.*)""")]
+    [Then(@"the result should be false")]
+    [Then(@"the result should be greater than the datetime (.*)")]
+    [Then(@"the result should be greater than the datetimeoffset (.*)")]
+    [Then(@"the result should be greater than the integer (.*)")]
+    [Then(@"the result should be greater than or equal to the datetime (.*)")]
+    [Then(@"the result should be greater than or equal to the datetimeoffset (.*)")]
+    [Then(@"the result should be greater than or equal to the integer (.*)")]
+    [Then(@"the result should be less than the datetime (.*)")]
+    [Then(@"the result should be less than the datetimeoffset (.*)")]
+    [Then(@"the result should be less than the integer (.*)")]
+    [Then(@"the result should be less than or equal to the datetime (.*)")]
+    [Then(@"the result should be less than or equal to the datetimeoffset (.*)")]
+    [Then(@"the result should be less than or equal to the integer (.*)")]
+    [Then(@"the result should be null")]
+    [Then(@"the result should be of type (.*)")]
+    [Then(@"the result should be true")]
+    [Then(@"the result should contain")]
+    [Then(@"the result should equal the context value (.*)")]
+    [Then(@"the result should not be null")]
+    [Then(@"the result should not equal the string ""(.*)""")]
+    ```
+- Custom step argument transformations:
+
+  - TimeSpan transformation converts to TimeSpan for the following free-text argument formats:
+  
+    ```
+    1 day, 1 hour, 1 minute, 1 second
+    5 days, 4 hours, 3 minutes, 2 seconds
+    5 days, 4 hours, 3 minutes
+    5 days, 3 minutes, 2 seconds
+    5 days, 4 hours, 2 seconds
+    4 hours, 3 minutes, 2 seconds
+    5 days, 4 hours
+    5 days, 3 minutes
+    5 days, 2 seconds
+    4 hours, 3 minutes
+    4 hours, 2 seconds
+    3 minutes, 2 seconds
+    5 days
+    4 hours
+    3 minutes
+    2 seconds
+    ```
 
 To install via NuGet, use:
 ```
