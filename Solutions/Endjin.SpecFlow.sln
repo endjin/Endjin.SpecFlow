@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Endjin.SpecFlow.Owin.Hostin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Endjin.SpecFlow.Composition", "Endjin.SpecFlow.Composition\Endjin.SpecFlow.Composition.csproj", "{5DEAC6E3-2962-4284-B010-BF4B0C706DE9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Endjin.SpecFlow.Specs", "Endjin.SpecFlow.Specs\Endjin.SpecFlow.Specs.csproj", "{9234CE43-E56C-4E1D-84E0-69D24B5CA787}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "@Specs", "@Specs", "{15803E2B-CA4E-4E03-B568-E99E1427DA9D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,8 +31,15 @@ Global
 		{5DEAC6E3-2962-4284-B010-BF4B0C706DE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5DEAC6E3-2962-4284-B010-BF4B0C706DE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5DEAC6E3-2962-4284-B010-BF4B0C706DE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9234CE43-E56C-4E1D-84E0-69D24B5CA787}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9234CE43-E56C-4E1D-84E0-69D24B5CA787}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9234CE43-E56C-4E1D-84E0-69D24B5CA787}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9234CE43-E56C-4E1D-84E0-69D24B5CA787}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9234CE43-E56C-4E1D-84E0-69D24B5CA787} = {15803E2B-CA4E-4E03-B568-E99E1427DA9D}
 	EndGlobalSection
 EndGlobal
