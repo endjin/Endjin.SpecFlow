@@ -15,12 +15,12 @@
 
         public static void Start()
         {
-            var path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.CommonProgramFilesX86), WaStorageEmulatorFilePath);
+            var path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ProgramFilesX86), WaStorageEmulatorFilePath);
             var info = new FileInfo(path);
 
             if (!info.Exists)
             {
-                path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.CommonProgramFilesX86), OldWaStorageEmulatorFilePath);
+                path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ProgramFilesX86), OldWaStorageEmulatorFilePath);
                 info = new FileInfo(path);
             }
 
