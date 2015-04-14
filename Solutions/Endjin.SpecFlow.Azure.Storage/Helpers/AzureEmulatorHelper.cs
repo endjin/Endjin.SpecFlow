@@ -43,7 +43,7 @@
 
                 var exitCode = proc.ExitCode;
 
-                if (exitCode == 0)
+                if (exitCode != 0)
                 {
                     throw new InvalidOperationException(string.Format("Error {0} executing {1} {2}", exitCode, start.FileName, start.Arguments));
                 }
