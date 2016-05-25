@@ -1,6 +1,6 @@
 ﻿namespace Endjin.SpecFlow.Azure.Storage.Hooks
 {
-    #region Using directives
+    #region Using Directives
 
     using Endjin.SpecFlow.Azure.Storage.Helpers;
 

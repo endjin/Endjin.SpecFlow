@@ -11,14 +11,13 @@
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <description>Useful extensions for SpecFlow. Integration with Endjin.Composition Framework</description>
     <dependencies>
-      <dependency id="Endjin.Core.Composition" version="2.2.0.0" />
-      <dependency id="Should" version="1.1.0" />
-      <dependency id="SpecFlow" version="1.9.0" />
+      <dependency id="Endjin.Core.Composition" version="2.2.0.45" />
+      <dependency id="SpecFlow" version="2.0.0" />
     </dependencies>
   </metadata>
   <files>
     <file src="License.txt" />
-    <file src="Endjin.SpecFlow.Composition.dll" target="lib\net45\" />
+    <file src="Endjin.SpecFlow.Composition.dll" target="lib\net452\" />
     <file src="Install.ps1" target="tools" />
     <file src="..\Artefacts\NuGet\Endjin.SpecFlow.Composition\app.config.install.xdt" target="content" />
     <file src="..\Artefacts\NuGet\Endjin.SpecFlow.Composition\app.config.uninstall.xdt" target="content" />

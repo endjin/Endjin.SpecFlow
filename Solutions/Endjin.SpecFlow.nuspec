@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
     <id>Endjin.SpecFlow</id>
-    <version>1.0.0.0</version>
+    <version>2.0.0.0</version>
     <title>Endjin's SpecFlow Extensions</title>
     <authors>Endjin</authors>
     <owners>Endjin</owners>
@@ -11,13 +11,13 @@
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <description>Useful general purpose extensions for SpecFlow</description>
     <dependencies>
-      <dependency id="Should" version="1.1.0" />
-      <dependency id="SpecFlow.NUnit" version="1.1.1" />
+      <dependency id="Should" version="1.1.20" />
+      <dependency id="SpecFlow" version="2.0.0" />
     </dependencies>
   </metadata>
   <files>
     <file src="License.txt" target="License.txt" />
-    <file src="Endjin.SpecFlow.dll" target="lib\net45\" />
+    <file src="Endjin.SpecFlow.dll" target="lib\net452\" />
     <!--<file src="Install.ps1" target="tools" />-->
     <file src="..\Artefacts\NuGet\Endjin.SpecFlow\app.config.install.xdt" target="content" />
     <file src="..\Artefacts\NuGet\Endjin.SpecFlow\app.config.uninstall.xdt" target="content" />

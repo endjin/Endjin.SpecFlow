@@ -10,13 +10,20 @@
 
     internal static class AzureEmulatorHelper
     {
+        private const string AzureEmulatorFilePath = @"Microsoft SDKs\Azure\Storage Emulator\AzureStorageEmulator.exe";
         private const string WaStorageEmulatorFilePath = @"Microsoft SDKs\Azure\Storage Emulator\WAStorageEmulator.exe";
         private const string OldWaStorageEmulatorFilePath = @"Microsoft SDKs\Windows Azure\Storage Emulator\WAStorageEmulator.exe";
 
         public static void Start()
         {
-            var path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ProgramFilesX86), WaStorageEmulatorFilePath);
+            var path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ProgramFilesX86), AzureEmulatorFilePath);
             var info = new FileInfo(path);
+
+            if (!info.Exists)
+            {
+                path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ProgramFilesX86), WaStorageEmulatorFilePath);
+                info = new FileInfo(path);
+            }
 
             if (!info.Exists)
             {
@@ -45,7 +52,7 @@
 
                 if (exitCode != 0)
                 {
-                    throw new InvalidOperationException(string.Format("Error {0} executing {1} {2}", exitCode, start.FileName, start.Arguments));
+                    throw new InvalidOperationException($"Error {exitCode} executing {start.FileName} {start.Arguments}");
                 }
             }
         }
