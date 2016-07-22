@@ -12,7 +12,7 @@
     <description>Useful extensions for SpecFlow. Integration with Endjin.Composition Framework</description>
     <dependencies>
       <dependency id="Endjin.Core.Composition" version="2.2.0.45" />
-      <dependency id="SpecFlow" version="2.0.0" />
+      <dependency id="SpecFlow" version="2.1.0" />
     </dependencies>
   </metadata>
   <files>

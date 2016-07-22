@@ -11,7 +11,7 @@
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <description>Useful extensions for SpecFlow. Integration with Azure Storage Emulator</description>
     <dependencies>
-      <dependency id="SpecFlow" version="2.0.0" />
+      <dependency id="SpecFlow" version="2.1.0" />
     </dependencies>
   </metadata>
   <files>
